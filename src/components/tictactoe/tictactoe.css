@@ -1,0 +1,178 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 47, 61);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.winner-container{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.container > div {
+    margin-bottom: 10px;
+}
+
+.personal_logo_container {
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.main-heading span {
+    color: #007bff;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 10px;
+}
+
+.board > div {
+    display: flex;
+    justify-content: center;
+}
+
+.boxes {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: rgba(0, 139, 139, 0.341);
+    transition: background-color 0.3s ease;
+}
+
+.boxes:hover {
+    background-color: #ffffffaf;
+}
+
+.row1, .row2 {
+    margin-bottom: 7px;
+}
+
+
+button {
+    background-color: #0a85ae56;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: tomato;
+}
+
+.row1 .boxes:nth-child(1),
+.row1 .boxes:nth-child(2),
+.row2 .boxes:nth-child(1),
+.row2 .boxes:nth-child(2),
+.row3 .boxes:nth-child(1),
+.row3 .boxes:nth-child(2) {
+    margin-right: 10px; /* Adjust the margin as per your requirement */
+}
+
+.cssbuttons-io-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 0.7em 1.4em 0.7em 1.1em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #14a73e98;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+  }
+  
+  .cssbuttons-io-button svg {
+    margin-right: 6px;
+  }
+  
+  .cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em rgba(255, 99, 71, 0.7);
+    background: tomato;
+  }
+  
+  .cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #14a73e98;
+  }
+
+  .newGameBtn{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .loader {
+    text-align: center;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 0px;
+    animation: typewriter 2s steps(10)  infinite alternate , blink 0.5s steps(10) infinite;
+  }
+  
+  .loader-text1 {
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(to right,#159957, #155799);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .loader-text2 {
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(0deg, rgba(20,167,62,1) 0%, rgba(102,247,113,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @keyframes typewriter {
+    0% {
+      width: 130px;
+    }
+  
+    100% {
+      width: 150px;
+    }
+  }
+  
+  @keyframes blink {
+    0% {
+      border-right-color: rgba(255,255,255,.75);
+      ;
+    }
+  
+    100% {
+      border-right-color: transparent;
+    }
+  }
