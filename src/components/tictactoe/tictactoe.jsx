@@ -21,7 +21,9 @@ const TicTacToe = () => {
                 break;
             }
         }
-        if(won === true) setLock(true);
+        if(won === true){
+            setLock(true);
+        }
     }
 
     function handleClick(id){
@@ -50,9 +52,11 @@ const TicTacToe = () => {
 
     return(
     <>
-    <div className="loader winner-container">
+    <div className="winner-container">
+    <div className="loader">
         {!lock && <span className="loader-text1">Welcome!</span>}
-        {lock && <span className="loader-text2">{turn}, Won!</span>}
+        {lock && <span className="loader-text2"><strong>{turn}</strong>, Won!</span>}
+    </div>
     </div>
     <div className='personal_logo_container'>
         <img src={PersonalLogo} width="140px" />

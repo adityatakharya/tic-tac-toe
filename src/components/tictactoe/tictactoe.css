@@ -14,11 +14,23 @@ body {
     text-align: center;
 }
 
-.winner-container{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    text-align: center;
+
+
+.winner-container {
+  background-color: rgba(32, 32, 32, 0.603);
+  height: 40px;
+  width: 250px;
+  margin: 0 auto 40px;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .container > div {
@@ -133,6 +145,8 @@ button:hover {
   }
 
   .loader {
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     overflow: hidden;
     border-right: 3px solid;
@@ -162,7 +176,7 @@ button:hover {
     }
   
     100% {
-      width: 150px;
+      width: 200px;
     }
   }
   
